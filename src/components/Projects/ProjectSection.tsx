@@ -160,7 +160,9 @@ const ProjectSection = () => {
                                         return (
                                             <motion.div
                                                 key={index}
-
+                                                initial={{ opacity: 0, y: 50 }}
+                                                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                                transition={{ duration: 0.8, delay: (index + 1) * 0.5 }}
                                                 className='w-[350px] md:w-full p-2 rounded-lg bg-gray-600 flex gap-3 items-center flex-col cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'
                                             >
                                                 <img src={item.src} className='w-full h-auto' />
