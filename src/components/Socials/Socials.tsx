@@ -5,13 +5,8 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandWhatsapp,
-  IconBrandX,
-  IconExchange,
-  IconHome,
   IconMail,
-  IconNewSection,
   IconPhoneCall,
-  IconTerminal2,
 } from "@tabler/icons-react";
 
 const Socials = () => {
