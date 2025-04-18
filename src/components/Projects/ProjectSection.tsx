@@ -1,7 +1,7 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import { CiShare1 } from "react-icons/ci";
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 const websiteProjectObj: Array<{
     title: string,
@@ -98,18 +98,20 @@ const webAppProjects: Array<{
     ]
 
 const ProjectSection = () => {
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: false})
     return (
         <div className='relative w-full bg-default-reverse border-b border-zinc-600'>
             <div className='mask-wrapper absolute' />
             <div className='content-wrapper z-50 relative'>
                 <div className='w-full flex flex-col gap-12 py-20'>
                     <h1 className='text-white font-bold text-4xl tracking-wider uppercase w-full text-center'>Projects</h1>
-                    <div className='flex flex-col gap-8 items-center'>
+                    <div ref={ref} className='flex flex-col gap-8 items-center'>
                         <div className='flex flex-col gap-6'>
                             <motion.h1
                                 className='text-xl text-zinc-500 uppercase tracking-widest'
                                 initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                animate={isInView ? { opacity: 1, x: 0 } : {}}
                                 transition={{ duration: 0.8 }}
                             >
                                 Websites
@@ -121,7 +123,7 @@ const ProjectSection = () => {
                                         return (
                                             <motion.div
                                                 initial={{ x: isLeft ? -100 : 100, opacity: 0 }}
-                                                animate={{ x: 0, opacity: 1 }}
+                                                animate={isInView ? { x: 0, opacity: 1 } : {}} 
                                                 transition={{
                                                     duration: 0.6,
                                                     delay: index * 0.3,
@@ -146,7 +148,7 @@ const ProjectSection = () => {
                             <motion.h1
                                 className='text-xl text-zinc-500 uppercase tracking-widest'
                                 initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                animate={isInView ? { opacity: 1, x: 0 } : {}}
                                 transition={{ duration: 0.8 }}
                             >
                                 web apps

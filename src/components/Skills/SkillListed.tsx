@@ -10,65 +10,65 @@ const tabData = [
     {
         label: 'Programming Languages',
         content: [
-            <FaPython size={40} className='text-white' />,
-            <FaJs size={40} className='text-white' />,
-            <SiTypescript size={40} className='text-white' />,
-            <TbFileTypeSql size={40} className='text-white' />
+            <FaPython key="python" size={40} className='text-white' />,
+            <FaJs key="js" size={40} className='text-white' />,
+            <SiTypescript key="ts" size={40} className='text-white' />,
+            <TbFileTypeSql key="sql" size={40} className='text-white' />
         ]
     },
     {
         label: 'Framework & Libraries',
         content: [
-            <FaNodeJs size={40} className='text-white' />,
-            <SiExpress size={40} className='text-white' />,
-            <SiDjango size={40} className='text-white' />,
-            <FaVuejs size={40} className='text-white' />,
-            <FaReact size={40} className='text-white' />,
-            <TbBrandNextjs size={40} className='text-white' />,
-            <SiRedux size={40} className='text-white' />,
-            <TbApi size={40} className='text-white' />
+            <FaNodeJs key="node" size={40} className='text-white' />,
+            <SiExpress key="es" size={40} className='text-white' />,
+            <SiDjango key="dj" size={40} className='text-white' />,
+            <FaVuejs key="vue" size={40} className='text-white' />,
+            <FaReact key="rs" size={40} className='text-white' />,
+            <TbBrandNextjs key="ns" size={40} className='text-white' />,
+            <SiRedux key="rd" size={40} className='text-white' />,
+            <TbApi key="api" size={40} className='text-white' />
         ]
     },
     {
         label: 'Automation and testing',
         content: [
-            <SiSelenium size={40} className='text-white' />,
-            <SiRobotframework size={40} className='text-white' />,
-            <SiBlazemeter size={40} className='text-white' />,
-            <SiWebdriverio size={40} className='text-white' />
+            <SiSelenium key="sl" size={40} className='text-white' />,
+            <SiRobotframework key="rf" size={40} className='text-white' />,
+            <SiBlazemeter key="bz" size={40} className='text-white' />,
+            <SiWebdriverio key="dr" size={40} className='text-white' />
         ]
     },
     {
         label: 'Backend Technologies',
         content: [
-            <FaAws size={40} className='text-white' />,
-            <SiSocketdotio size={40} className='text-white' />,
-            <SiRabbitmq size={40} className='text-white' />,
-            <SiRedis size={40} className='text-white' />,
+            <FaAws key="aws" size={40} className='text-white' />,
+            <SiSocketdotio key="io" size={40} className='text-white' />,
+            <SiRabbitmq key="mq" size={40} className='text-white' />,
+            <SiRedis key="red" size={40} className='text-white' />,
         ]
     },
     {
         label: 'Databases',
         content: [
-            <SiPostgresql size={40} className='text-white' />,
-            <SiMongodb size={40} className='text-white' />
+            <SiPostgresql key="psql" size={40} className='text-white' />,
+            <SiMongodb key="mdb" size={40} className='text-white' />
         ]
     },
     {
         label: 'Front End Technologies',
         content: [
-            <FaHtml5 size={40} className='text-white' />,
-            <FaCss3 size={40} className='text-white' />,
-            <SiTailwindcss size={40} className='text-white' />
+            <FaHtml5 key="html" size={40} className='text-white' />,
+            <FaCss3 key="css" size={40} className='text-white' />,
+            <SiTailwindcss key="tail" size={40} className='text-white' />
         ]
     },
     {
         label: 'Development tools',
         content: [
-            <FaJira size={40} className='text-white' />,
-            <FaGit size={40} className='text-white' />,
-            <FaNpm size={40} className='text-white' />,
-            <FaDocker size={40} className='text-white' />
+            <FaJira key="jira" size={40} className='text-white' />,
+            <FaGit key="git" size={40} className='text-white' />,
+            <FaNpm key="npm" size={40} className='text-white' />,
+            <FaDocker key="dckr" size={40} className='text-white' />
         ]
     },
 ]
